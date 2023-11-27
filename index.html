@@ -14,19 +14,20 @@
   <body>
     <div class="weather-app-container">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
-            class="search-form-input" />
+            class="search-form-input"
+            id="search-form-input" />
           <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Glendale</h1>
+            <h1 class="weather-app-city" id="city">Glendale</h1>
             <p class="weather-app-details">
               Monday 10:55, broken clouds
               <br />
@@ -47,5 +48,6 @@
         hosted by <a href="https://andees-weather-app.netlify.app">Netlify</a>
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
