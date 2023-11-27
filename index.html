@@ -3,29 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allan&family=Annie+Use+Your+Telescope&family=Inconsolata:wght@300&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
+      rel="stylesheet" />
     <title>WeatherApp</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <h1>Glendale</h1>
-      <div>
-        Monday 10:55, broken clouds
-        <br />
-        Humidity: 95%, Wind: 6.17km/h
-      </div>
-      <div>🌤️ 18°C</div>
-    </main>
-    <footer>
-      This is coded by <a href="https://github.com/Andee-R">Andee Reid</a> open
-      sourced on
-      <a href="https://github.com/Andee-R/Andees-weatherApp">Github</a> and
-      hosted by <a href="https://andees-weather-app.netlify.app">Netlify</a>
-    </footer>
+    <div class="weather-app-container">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input" />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Glendale</h1>
+            <p class="weather-app-details">
+              Monday 10:55, broken clouds
+              <br />
+              Humidity: <strong> 5% </strong>, Wind: <strong> 6.17km/h </strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">18</div>
+            <div class="weather-app-units">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This is coded by
+        <a href="https://github.com/Andee-R">Andee Reid</a> open sourced on
+        <a href="https://github.com/Andee-R/Andees-weatherApp">Github</a> and
+        hosted by <a href="https://andees-weather-app.netlify.app">Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
