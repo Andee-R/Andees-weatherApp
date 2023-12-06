@@ -81,9 +81,8 @@ main {
 .weather-forecast-icon {
   font-size: 30px;
 }
-
-.weather-forecast-temperature-max {
-  font-weight: 750;
+.weather-forecast-temperatures {
+  font-size: 14px;
 }
 a {
   color: #fbf2d5;

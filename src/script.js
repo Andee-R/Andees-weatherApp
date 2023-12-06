@@ -66,7 +66,7 @@ function displayForecast() {
     <div class="weather-forecast-day">${day}</div>
     <div class="weather-forecast-icon">⛅<div/>
     <div class= "weather-forecast-temperatures"
-    <span class="weather-forecast-temperature-max">66°</span>
+    <span class="weather-forecast-temperature-max"><strong>66°</strong></span>
     <span class="weather-forecast-temperature-min">46°</span>
     </div>
     </div>
@@ -75,7 +75,7 @@ function displayForecast() {
     `;
   });
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHtml = forecastHtml;
+  forecastElement.innerHTML = forecastHtml;
 }
 
 let searchFormElement = document.querySelector("#search-form");
