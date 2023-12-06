@@ -70,20 +70,29 @@ main {
   font-size: 20px;
   margin-top: 20px;
 }
-.weather-forecast-data {
+.weather-forecast {
   display: flex;
   justify-content: space-between;
-  color: #384a52;
-  font-size: 14px;
-  padding: 7px;
   text-align: center;
 }
+.weather-forecast-date {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: #384a52;
+}
+
 .weather-forecast-icon {
-  font-size: 30px;
+  text-align: center;
+  font-size: 38px;
 }
 .weather-forecast-temperatures {
   font-size: 14px;
+  text-align: center;
+  color: #384a52;
+  margin-top: 10px;
 }
+
 a {
   color: #fbf2d5;
 }

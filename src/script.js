@@ -62,8 +62,8 @@ function displayForecast() {
       `
       <div class="row">
     <div class="col-2">
-    <div class="weather-forecast-data">
-    <div class="weather-forecast-day">${day}</div>
+    <div class="weather-forecast">
+    <div class="weather-forecast-date">${day}</div>
     <div class="weather-forecast-icon">⛅<div/>
     <div class= "weather-forecast-temperatures"
     <span class="weather-forecast-temperature-max"><strong>66°</strong></span>
