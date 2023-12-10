@@ -73,11 +73,13 @@ main {
 .weather-forecast {
   display: flex;
   justify-content: space-between;
+}
+.weather-forecast-day {
   margin-top: 30px;
   text-align: center;
+  color: #384a52;
 }
 .weather-forecast-date {
-  color: #384a52;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
