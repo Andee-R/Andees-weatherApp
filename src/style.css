@@ -77,7 +77,6 @@ main {
 .weather-forecast-day {
   margin-top: 30px;
   font-size: 16px;
-  text-align: center;
 }
 .weather-forecast-date {
   color: #384a52;
@@ -87,6 +86,8 @@ main {
 }
 
 .weather-forecast-icon {
+  height: 66px;
+  width: 66px;
   display: block;
   margin: 0 auto;
 }
@@ -96,9 +97,8 @@ main {
   color: #384a52;
 }
 .weather-forecast-temperature-max {
-  padding: 0 10px;
+  padding: 0 5px;
 }
-
 a {
   color: #fbf2d5;
 }
