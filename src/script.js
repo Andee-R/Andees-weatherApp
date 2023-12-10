@@ -65,34 +65,38 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  let forecastHtml = "";
+  let forecast = response.data.daily;
 
-  response.data.daily.forEach(function (day, index) {
-    if (index < 5) {
-      forecastHtml =
-        forecastHtml +
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
         `
-        <div class="row">
-        <div class="col-2">
-        <div class="weather-forecast-day">
-      <div class="weather-forecast-date">${formatDay(day.time)}</div>
-      <img src="${day.condition.icon_url}"class="weather-forecast-icon";
-      <div class= "weather-forecast-temperatures"
-      <span class="weather-forecast-temperature-max"><strong>${Math.round(
-        day.temperature.maximum
-      )}°</strong></span>
-        <span class="weather-forecast-temperature-min">${Math.round(
-          day.temperature.minimum
-        )}°</span>
+      <div class="col-2">
+        <div class="weather-forecast-date">${formatDay(forecastDay.time)}</div>
+        <img
+          src="${forecastDay.condition.icon_url}"
+          alt=""
+          width="52px"
+        />
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> ${Math.round(
+            forecastDay.temperature.maximum
+          )}°</span>
+          <span class="weather-forecast-temperature-min"> ${Math.round(
+            forecastDay.temperature.minimum
+          )}°</span>
         </div>
-        </div>
-        </div>
-        </div>
-          `;
+      </div>
+  `;
     }
   });
-  let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = forecastHtml;
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 let searchFormElement = document.querySelector("#search-form");
